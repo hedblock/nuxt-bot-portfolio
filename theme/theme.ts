@@ -1,0 +1,37 @@
+import { CardComponent } from "./additions/card/card";
+import { buttonStyles } from "./components/button";
+import { badgeStyles } from "./components/badge";
+import { inputStyles } from "./components/input";
+import { progressStyles } from "./components/progress";
+import { sliderStyles } from "./components/slider";
+import { textareaStyles } from "./components/textarea";
+import { switchStyles } from "./components/switch";
+import { linkStyles } from "./components/link";
+import spacing from "./foundations/spacing";
+import fonts from "./foundations/fonts";
+import globalStyles from "./styles";
+
+import Chakra from "@chakra-ui/vue"
+
+export default {
+  ...globalStyles,
+  // ...spacing,
+  fonts, // Fonts
+  // badgeStyles, // badge styles
+  // buttonStyles, // button styles
+  // linkStyles, // link styles
+  // progressStyles, // progress styles
+  // sliderStyles, // slider styles
+  // inputStyles, // input styles
+  // textareaStyles, // textarea styles
+  // switchStyles, // switch styles
+  // CardComponent, // card component
+  // baseStyles: {
+  //   CText: {
+  //     color: "whiteAlpa.900",
+  //   }
+  // },
+  config: {
+    initialColorMode: "dark"
+  }
+};
